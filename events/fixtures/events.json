@@ -1,0 +1,65 @@
+[
+  {
+    "pk": 1,
+    "model": "events.event",
+    "fields": {
+      "weekday": "senin",
+      "time": "07.00-08:00",
+      "description": "Gratis Ongkir"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "events.event",
+    "fields": {
+      "weekday": "senin",
+      "time": "10.00-12.00",
+      "description": "Gratis Ongkir"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "events.event",
+    "fields": {
+      "weekday": "rabu",
+      "time": "07.00-10.00",
+      "description": "Buy 2 get 1"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "events.event",
+    "fields": {
+      "weekday": "kamis",
+      "time": "17.00-20.00",
+      "description": "Gratis Ongkir"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "events.event",
+    "fields": {
+      "weekday": "jum'at",
+      "time": "20.00-21.00",
+      "description": "Mistery Box"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "events.event",
+    "fields": {
+      "weekday": "Minggu",
+      "time": "08.00-10.00",
+      "description": "Buy 1 get 1"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "events.event",
+    "fields": {
+      "weekday": "Sunday",
+      "time": "21.00",
+      "description": "Gratis Ongkir"
+    }
+  }
+]

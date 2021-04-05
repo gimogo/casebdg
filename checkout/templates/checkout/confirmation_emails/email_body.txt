@@ -1,0 +1,22 @@
+Hai!! {{ order.full_name }}!
+
+Terimakasih telah belanja di toko kami. prodak yang kamu beli adalah:
+
+Nomer belanja: {{ order.order_number }}
+Tanggal belanja: {{ order.purchase_date }}
+Total: €{{ order.grand_total }}
+
+Pembayaran/Alamat:
+
+Nama penerima: {{ order.full_name }}
+Alamat: {{ order.address_line1 }}{% if order.address_line2 %}{{ order.address_line2 }},{% endif %}
+{{ order.town_or_city }},{% if order.county %}{% endif %} {{ order.country }}, {% if order.postcode %}{{ order.postcode }}.{% else %}.{% endif %}
+
+Nomor telepon {{ order.phone_number }}.
+
+Jika anda memiliki pertanya bisa hubungi {{ contact_email }}.
+
+Terimakasih telah belanja!
+
+
+Jual Case Bandung

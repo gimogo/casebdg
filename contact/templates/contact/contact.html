@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra_title %}- Contact{% endblock %}
+{% block content %}
+
+<div class="container mt-5 mb-5">
+    <!--Contact Heading-->
+        {% include 'contact/includes/contact_heading.html' %} 
+
+    <div class="row mt-4">
+        <!--Contact Form-->
+        {% include 'contact/includes/contact_form.html' %} 
+    </div>
+    <div class="row mt-4">
+        <!--Contact Details and Map-->
+        {% include 'contact/includes/contact_details.html' %} 
+    </div>
+</div>
+
+<!--Info window content in the Map, hidden by default and visible when the marker is clicked-->
+<div style="display: none;">
+    <div class="m-2" id="info-window-content">
+        <h5 class="landing-about-heading">Jual Case Bandung<i class="fab fa-pagelines icon-green ml-2"></i></h5>
+        <h6>Opening hours:</h6>
+        <table>
+            <tr><th>Senin</th><td>10:00 - 20:00</td></tr>
+            <tr><th>Selasa</th><td>10:00 - 20:00</td></tr>
+            <tr><th>Rabu</th><td>10:00 - 20:00</td></tr>
+            <tr><th>Kamis</th><td>10:00 - 20:00</td></tr>
+            <tr><th>Jum'at</th><td>10:00 - 20:00</td></tr>
+            <tr><th>Sabtu</th><td>11:00 - 20:00</td></tr>
+            <tr><th>Minggu</th><td>11:00 - 21:00</td></tr>
+        </table>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<!--Google map API settings-->
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key={{api_key}}&callback=initMap">
+</script>
+
+<script src="{% static 'js/map.js' %}"></script>
+   
+{% endblock %}

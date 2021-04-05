@@ -1,0 +1,2 @@
+{% load i18n %}
+{% blocktrans %}Akun sosial media telah terhubung dengan aku yang yang telah terdaftar.{% endblocktrans %}

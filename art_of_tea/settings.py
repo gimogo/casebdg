@@ -169,7 +169,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Europe/Dublin'
+TIME_ZONE = 'Asia/Jakarta'
 
 USE_I18N = True
 
